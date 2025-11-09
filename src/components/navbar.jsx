@@ -59,7 +59,8 @@ export const BgNavbar = () => {
             <h2 className="text-xl font-bold mb-2">Contact Person</h2>
             <p className="mb-4">📞 WhatsApp: +62 8234459702 </p>
             <p className="mb-4">📧 Email: rezanurit16@gmail.com</p>
-            <button className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+            <button className=
+            "bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 cursor-pointer"
               onClick={() => setShowModal(false)}>Tutup
             </button>
           </div>

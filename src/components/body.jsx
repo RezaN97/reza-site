@@ -1,9 +1,11 @@
 import ssApp1 from '../img/ss-app1.png'
 import ssApp2 from '../img/ss-app2.png'
+import imgRest from '../img/rest-api.png'
 const Body = () => {
     return (
         <>
-        <div className="bg-gray-700 w-full h-auto relative font-sans flex flex-col text-white">
+        <div className=
+        " bg-gray-700 w-screen h-screen relative font-sans flex flex-col  text-white px-20 py-10">
            <div className="">
             
              <HeaderText/>
@@ -80,7 +82,10 @@ export const HeaderText = () => {
                         <h1>Javascript</h1>
                     </div>
                     <div className="w-25 h-10  bg-black rounded-xl p-2">
-                        <h1>Tailwind</h1>
+                        <h1>Node.js</h1>
+                    </div>
+                    <div className="w-35 h-10  bg-black rounded-xl p-2">
+                        <h1>Tailwind CSS</h1>
                     </div>
                     <div className="w-25 h-10  bg-black rounded-xl p-2">
                         <h1>React</h1>
@@ -189,7 +194,7 @@ export const Portofolio = () => {
 
 
 
-{/* dekst device */}
+{/* dekstop device */}
         
         <div className="max-sm:hidden right-10 mt-10">
             <h1 className="text-5xl text-center font-semibold">Portofolio</h1>
@@ -257,7 +262,28 @@ export const Portofolio = () => {
 
                             </div>
                         </div>
+
+                  
+
                     </div>
+                      {/* content 3  */}
+                      <div className='flex w-full h-auto'>
+                        <div className="bg-orange-500 mt-5 w-[32vw] h-[40vh] flex justify-center items-center">
+                                {/* img */}
+                                <div className='w-[70vw] h-full p-1 mt-4 justify-center items-center'>
+                                    <img className='w-[60vw] h-auto' src={imgRest} alt="ss rest api" />
+                                </div>
+                        </div>
+                        <div className='flex flex-col items-start px-5 bg-orange-400 w-[80vw] h-[40vh] mt-5'>
+                            <h1 className='text-2xl font-semibold underline-offset-0'>Rest API - Chill Movie </h1>
+                            <h2 className=
+                            ' px-5 font-semibold '>Feature:</h2>
+                            <p className='font-semibold'>1.CRUD (Create, Read, Update, Delete)</p>
+                        
+                        </div>
+                        
+                      </div>
+                    
               </div>
 
 
