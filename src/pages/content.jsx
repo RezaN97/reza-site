@@ -1,4 +1,7 @@
-import picProfile from '../img/pic-profile.png'
+import picProfile from '../img/pic-profile.jpg'
+import picProject2 from '../img/ss-app2.png'
+import picProject3 from '../img/ss-app3.png'
+import Footer from '../components/footer';
 
 const Content = () => {
 
@@ -13,9 +16,6 @@ const Content = () => {
         });
     }
 
-    const handleForm = (e) => {
-        e.preventDefault()
-    }
 
     return (
     <>
@@ -96,13 +96,13 @@ const Content = () => {
                     <a href="#" class="btn">View Demo</a>
                 </div>
                 <div class="project">
-                    <img src="project2.jpg" alt="Project 2"/>
-                    <h3>Task Manager</h3>
-                    <p>A productivity app using MERN stack.</p>
-                    <a href="#" class="btn">View Demo</a>
+                    <img src={picProject2} alt="Stream Movie"/>
+                    <h3>Stream Movie Apps</h3>
+                    <p>A fullstack stream movie platform built with React and Express.js.</p>
+                    <a href="https://chill-movie-six.vercel.app/" class="btn">View Demo</a>
                 </div>
                 <div class="project">
-                    <img src="project3.jpg" alt="Project 3"/>
+                    <img src={picProject3} alt="Project 3"/>
                     <h3>Portfolio Site</h3>
                     <p>This very site, showcasing CSS elegance.</p>
                     <a href="#" class="btn">View Demo</a>
@@ -113,19 +113,23 @@ const Content = () => {
     
     <section id="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <form onSubmit={handleForm}>
-                <input type="text" placeholder="Name" required/>
-                <input type="email" placeholder="Email" required/>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit" class="btn">Send</button>
-            </form>
+            <h2 >Contact</h2>
+            <div class="contact">
+                <h4 class='title'> Phone/Whatsapp : </h4>
+                    <p>082234459702</p>
+            </div>
+            <div class="contact">
+                <h4 class='title'>Email : </h4>
+                    <p>rezanurit16@gmail.com</p>
+
+            </div>
+
+            
         </div>
     </section>
     <footer>
-        <p>&copy; 2025 Reza Nur Arifin. All rights reserved.</p>
+        <Footer />
     </footer>
-
   
 
 

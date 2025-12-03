@@ -9,7 +9,9 @@ const Home = () => {
         <>
         <div className='flex flex-col w-full h-auto'>
             <Content/>
-            <Footer/>
+            {/* <Body/> */}
+            {/* <Footer/> */}
+
 
         </div>
 

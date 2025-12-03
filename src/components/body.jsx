@@ -1,6 +1,6 @@
-import ssApp1 from '../img/ss-app1.png'
-import ssApp2 from '../img/ss-app2.png'
-import imgRest from '../img/rest-api.png'
+// import ssApp1 from '../img/ss-app1.png'
+// import ssApp2 from '../img/ss-app2.png'
+// import imgRest from '../img/rest-api.png'
 const Body = () => {
     return (
         <>
